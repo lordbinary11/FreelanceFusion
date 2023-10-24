@@ -1,0 +1,48 @@
+@using Microsoft.AspNetCore.Authentication.Cookies
+
+@{
+    var isAuthenticated = User.Identity.IsAuthenticated;
+}
+
+<header class="header">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+        <div class="container-fluid">
+            <a class=" logo" asp-area="" asp-controller="Home" asp-action="Index">FreelanceFusion</a>
+
+            <div class="navbar-collapse collapse justify-content-end">
+                <ul class="navbar-nav text-align-center">
+                    @if (isAuthenticated)
+                    {    
+                         <li class="nav-item">
+                            <a class="logout" asp-area="" asp-controller="LogOut" asp-action="Index">LogOut</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="joblisting" asp-area="" asp-controller="Joblisting" asp-action="Index">JobListing</a>
+                        </li>
+                        <button style="width: 120px; height: 40px; background: #338573; border-radius: 10px; text-align:center; margin-right:20px">
+                            <li class="nav-item">
+                                <a class="postjob" asp-area="" asp-controller="PostJob" asp-action="PostJob">PostJob</a>
+                            </li>
+                        </button>
+                        <li class="nav-item">
+                            <a class="dash" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="profile" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
+                        </li> 
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="signup" asp-area="" asp-controller="SignUp" asp-action="Index">SignUp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="login" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+                        </li>
+                       
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

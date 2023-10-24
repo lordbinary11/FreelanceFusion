@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <form asp-action="SignIn" method="post" style="text-align: center; width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 15px;">
+        <h2>Signup</h2>
+        <div style="margin-bottom: 10px;">
+            <input type="text" id="Firstname" name="Firstname" placeholder="First Name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <input type="text" id="Lastname" name="Lastname" placeholder="Last Name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <input type="text" id="Username" name="Username" placeholder="Username" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <input type="email" id="Email" name="Email" placeholder="Email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+        </div>
+         <div style="margin-bottom: 20px;">
+            <input type="password" id="Password" name="Password" placeholder="Password" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+        </div>
+         <div style="margin-bottom: 20px;">
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+        </div>
+        <button style="width: 100%; padding: 10px; border-radius: 5px; border: none; background-color: #338573; color: white;">Signup</button>
+        <p style="margin-top: 10px;">Already have an account? <a href="/login">Login</a></p> <!-- Replace "/login" with the appropriate link to your login screen -->
+        <div asp-validation-summary="All" class="text-danger"></div> <!-- Display error message -->
+    </form>
+</div>
+</html>

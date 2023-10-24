@@ -1,0 +1,164 @@
+@using Microsoft.AspNetCore.Html
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FreelanceFusion</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FreelanceFusion.styles.css" asp-append-version="true" />
+
+    <style>
+     .profile{
+        width: 138px;   
+        text-align: center; 
+        color: #338573; 
+        font-size: 20px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word
+     }
+     a.profile:hover{
+        color:inherit
+     }
+     .dash{
+        width: 138px; 
+        margin-right:20px;
+        text-align: center; 
+        color: #338573; 
+        font-size: 20px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word"
+     }
+     a.dash:hover{
+        color:inherit
+     }
+     
+    .postjob{
+       width: 126px; 
+       height: 38px; 
+       text-align: center;
+       color: white; 
+       font-size: 24px; 
+       font-family: Noto Sans; 
+       font-weight: 700; 
+       word-wrap: break-word;
+       text-decoration: none;
+       justify-content:center
+    }
+    a.postjob:hover{
+        color:inherit
+     }
+    .login{
+        width: 138px; 
+        margin-right:20px;
+        text-align: center; 
+        color: #338573; 
+        font-size: 20px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word"
+     }
+     a.login:hover{
+        color:inherit
+     }
+      .joblisting{
+        width: 138px; 
+        margin-right:20px;
+        text-align: center; 
+        color: #338573; 
+        font-size: 20px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word"
+     }
+     a.joblisting:hover{
+        color:inherit
+     }
+     .logout{
+        width: 138px; 
+        margin-right:20px;
+        text-align: center; 
+        color: #338573; 
+        font-size: 20px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word"
+     }
+     a.logout:hover{
+        color:inherit
+     }
+     .signup{
+        width: 138px; 
+        margin-right:20px;
+        text-align: center; 
+        color: #338573; 
+        font-size: 20px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word"
+     }
+     a.signup:hover{
+        color:inherit
+     }
+     .logo{
+        width: 210px; 
+        text-align: center; 
+        color: #338573; 
+        font-size: 30px; 
+        font-family: Noto Sans; 
+        font-weight: 600; 
+        text-decoration: none;
+        word-wrap: break-word"
+     }
+     a.logo:hover{
+        color:inherit
+     }
+    .header{
+        position:fixed;
+        z-index:1000;
+        width:100vw
+    }
+    .footer{
+        position:fixed;
+        z-index:1000;
+        width:100vw
+        
+    }
+    </style>
+
+</head>
+<body>
+    @await Html.PartialAsync("_NavigationBar")
+
+
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+     <footer class="footer">
+        <div style="width: 1365px; height: 83px; bottom: 0; position: absolute;">
+      <div style="width: 1365px; height: 60px; left: 0px; bottom: 0; position: absolute; background: #338573"></div>
+      <div style="width: 459.51px; height: 83px; left: 492.01px; top: 15px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 80px; word-wrap: break-word">© 2023 Freelance Fusion. Designed By Group 1</div>
+    </div>
+    </footer>  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
