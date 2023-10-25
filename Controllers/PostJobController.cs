@@ -69,7 +69,7 @@ public IActionResult Form1(Job j )
         connection.Open();
 
             // Insert the job into the Job table
-            var command = new SqlCommand("INSERT INTO Job (Title, Budget, Deadline, Description, CategoryID, JobSkill, UserID) VALUES (@Title, @Budget, @Deadline, @Description, @CategoryID, @JobSkill, @UserID)", connection);
+            var command = new SqlCommand("INSERT INTO Job (Title, Budget, Deadline, Description, CategoryID, JobSkill, UserID,Experience) VALUES (@Title, @Budget, @Deadline, @Description, @CategoryID, @JobSkill, @UserID, @Experience)", connection);
             command.Parameters.AddWithValue("@Title", j.Title);
             command.Parameters.AddWithValue("@Budget", j.Budget);
             command.Parameters.AddWithValue("@Deadline", j.Deadline);
@@ -77,6 +77,7 @@ public IActionResult Form1(Job j )
             command.Parameters.AddWithValue("@CategoryID", j.CategoryID);
             command.Parameters.AddWithValue("@JobSkill", j.JobSkill);
             command.Parameters.AddWithValue("@UserID", userId);
+            command.Parameters.AddWithValue("@Experience", j.Experience);
             command.ExecuteNonQuery();
 
     }     

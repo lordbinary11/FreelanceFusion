@@ -44,5 +44,9 @@ app.MapControllerRoute(
     pattern: "Logout",
     defaults: new { controller = "Logout", action = "Index" });
 
+    app.MapControllerRoute(
+    name: "jobDetails",
+    pattern: "JobDetails/{JobID}",
+    defaults: new { controller = "JobDetails", action = "Index" });
 
 app.Run();
