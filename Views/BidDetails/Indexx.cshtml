@@ -1,0 +1,37 @@
+@{
+    var bid = Model;
+    var showButtons = ViewBag.ShowButtons;
+}
+
+
+<div style="width: 100vw; height:100vh; position: relative; background: white">
+
+  <div style="width: 100vw; height: 80px;top: 0px;position: relative; background: #F4F5F7">
+  <div style="width: 964px; left: 600px; top: 0px; position: absolute">
+  <span style="color: black; font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">@bid.JobTitle</span>
+  @* <span style="color: black; font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word"> - Match Company Limited </span> *@
+  </div>
+  </div>
+
+  @if(!showButtons)
+{
+  <button style="width:250px;left: 450px; top: 100px; border-radius:20px;position: absolute;background: #F4F5F7; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">View Client Profile</button>
+  <a asp-controller="" asp-action="" asp-route-BidID="@bid.BidID">
+  <button style="width:187px;left: 745px; top: 100px; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Accept Bid</button>
+  </a>
+}
+
+<div style="width: 658px; margin-left:40px;margin-top:80px; height: 100px">
+<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">BidAmount:</span>
+<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
+<span style="color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidAmount<br/></span>
+<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">Bid Date</span>
+<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
+<span style="color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidDate<br/></span>
+
+</div>
+<div style="margin-top:20px">
+<div style="color: black; margin-left:40px; font-size: 24px; font-family: Poppins; font-weight: 700; line-height: 30px; word-wrap: break-word">Bid Message<br/></div>
+<div style="width: 1243px; height: 522px; left: 40px; top: 320px; position: absolute; color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidMessage</div>
+</div>
+</div>

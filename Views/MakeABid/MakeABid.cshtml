@@ -1,0 +1,22 @@
+@model Bid
+
+@{
+    ViewData["Title"] = "Make a Bid";
+}
+
+<h1 style=" text-align: center;font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">Make a Bid</h1>
+
+<form asp-action="MakeABid" asp-route-JobID="@Model.JobID" method="post">
+    <div class="form-group">
+        <label asp-for="BidAmount" style="position: absolute; margin-left:80px; top:160px;  color: #000; font-size: 20px; font-family: Inter; font-weight: 700"; required>Bid Amount</label>
+        <input asp-for="BidAmount" style="width: 20%; margin-top:60px;margin-left:74px;height: 40px;border-radius: 10px; border: 1px #D6D6D6 solid padding: 10px" />
+    </div>
+    <div class="form-group">
+        <label asp-for="BidMessage" style="position: absolute; margin-left:80px; top:290px;  color: #000; font-size: 20px; font-family: Inter; font-weight: 700;" >Bid Message</label>
+        <textarea asp-for="BidMessage" style="width: 50%; margin-top:80px;margin-left:74px;height: 70px;border-radius: 10px; border: 1px #D6D6D6 solid padding: 10px"; required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style =" margin-top: 30px; margin-left:100px; background-color: #338573; color: white;">Submit Bid</button>
+</form>
+
+
+

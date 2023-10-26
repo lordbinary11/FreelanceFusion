@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\FreelanceFusion
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/USER/Desktop/FreelanceFusion/Views/Dashboard/Dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
+[C:/Users/USER/Desktop/FreelanceFusion/Views/BidDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlkRGV0YWlsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/FreelanceFusion/Views/BidDetails/Indexx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlkRGV0YWlsc1xJbmRleHguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/FreelanceFusion/Views/Dashboard/ClientView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXENsaWVudFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/FreelanceFusion/Views/Dashboard/FreelancerView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEZyZWVsYW5jZXJWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Desktop/FreelanceFusion/Views/Home/Index.cshtml]
@@ -46,6 +58,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/USER/Desktop/FreelanceFusion/Views/LogOut/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nT3V0XExvZ091dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/FreelanceFusion/Views/MakeABid/BidLimitExceeded.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZUFCaWRcQmlkTGltaXRFeGNlZWRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/FreelanceFusion/Views/MakeABid/BidSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZUFCaWRcQmlkU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/FreelanceFusion/Views/MakeABid/MakeABid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZUFCaWRcTWFrZUFCaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Desktop/FreelanceFusion/Views/PostJob/JobPostSuccess.cshtml]

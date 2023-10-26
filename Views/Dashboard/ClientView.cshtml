@@ -1,0 +1,85 @@
+@{
+    ViewData["Title"] = "Client Dashboard";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            border-radius:100px;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+           
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .table a {
+            padding: 6px 12px;
+            border: 1px solid #;
+            border-radius: 4px;
+            background-color: #338573;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .table a:hover {
+            background-color: #23527c;
+            border-color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <a asp-controller="Dashboard" asp-action="FreelancerView" >
+        <h1 style="width:187px;left: 60px; margin-top: 20px; text-align:center; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Client View</h1>
+    </a>
+
+    <h2 style=" text-align: center;font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">My Submitted Bids</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Freelancer Name</th>
+                <th>Job Title</th>
+                <th>Bid Date</th>
+                <th>Bid Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bid in Model)
+            {
+                <tr>
+                    <td>@(bid.FirstName) @(bid.LastName)</td>
+                    <td>@bid.JobTitle</td>
+                    <td>@bid.BidDate</td>
+                    <td>$ @bid.BidAmount</td>
+                    <td>@bid.BidStatus</td>
+                    <td>
+                        <a asp-controller="BidDetails" asp-action="Indexx" asp-route-BidID="@bid.BidID">View</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

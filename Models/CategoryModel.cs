@@ -22,7 +22,22 @@ namespace FreelanceFusion.Models
     public string FirstName {get; set ;}
     public string LastName {get; set; }
     public string Email {get; set; }
+    public int UserID {get;set;}
 }
+
+   public class Bid
+ {
+    public int BidID{ get; set;}
+    public string BidStatus { get; set;}
+    public string BidAmount {get; set;}
+    public string BidMessage { get; set; }
+    public string BidDate { get; set; }
+    public int UserID { get; set; }
+    public string JobID {get; set; }
+    public string JobTitle { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+ }  
 
 public class UserCredentials
     {
@@ -40,6 +55,12 @@ public class UserSignup
     public string Email { get; set; }
     public string Password { get; set; }
     public string ConfirmPassword { get; set; }
+}
+
+public class CurrentUser
+{
+    public int UserID { get; set; }
+    // Other properties
 }
 
 }

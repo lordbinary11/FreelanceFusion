@@ -37,18 +37,19 @@ namespace FreelanceFusion.Controllers
             {
                 connection.Open();
 
-                string query = "SELECT COUNT(*) FROM [User] WHERE Username = @Username AND Password = @Password";
+                string query = "SELECT UserID FROM [User] WHERE Username = @Username AND Password = @Password";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Username", credentials.Username);
                 command.Parameters.AddWithValue("@Password", credentials.Password);
 
-                int count = Convert.ToInt32(command.ExecuteScalar());
+                int UserID = Convert.ToInt32(command.ExecuteScalar());
 
-                if (count > 0)
-        {
+                if (UserID > 0)
+            {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, credentials.Username)
+                new Claim(ClaimTypes.Name, credentials.Username),
+                 new Claim(ClaimTypes.NameIdentifier, UserID.ToString())
                 
             };
 

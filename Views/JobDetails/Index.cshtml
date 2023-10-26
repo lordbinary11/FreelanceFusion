@@ -12,10 +12,13 @@
   </div>
   </div>
 
-  
+  @if ((bool)ViewBag.ShowButtons)
+{
   <button style="width:250px;left: 450px; top: 100px; border-radius:20px;position: absolute;background: #F4F5F7; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">View Freelancer Profile</button>
+  <a asp-controller="MakeABid" asp-action="MakeABid" asp-route-JobID="@job.JobID">
   <button style="width:187px;left: 745px; top: 100px; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Make A Bid</button>
-
+  </a>
+}
 <div style="width: 658px; margin-left:40px;margin-top:80px; height: 259px">
 <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">Qualification:</span>
 <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
