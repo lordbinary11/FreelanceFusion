@@ -1,37 +1,54 @@
 @{
     var bid = Model;
+
     
-}
+  }
 
 
 <div style="width: 100vw; height:100vh; position: relative; background: white">
 
-  <div style="width: 100vw; height: 80px;top: 0px;position: relative; background: #F4F5F7">
-  <div style="width: 964px; left: 600px; top: 0px; position: absolute">
-  <span style="color: black; font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">@bid.JobTitle</span>
-  @* <span style="color: black; font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word"> - Match Company Limited </span> *@
-  </div>
-  </div>
+    <div style="width: 100vw; height: 80px;top: 0px;position: relative; background: #F4F5F7">
+        <div style="width: 964px; left: 600px; top: 0px; position: absolute">
+            <span style="color: black; font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">@bid.JobTitle</span>
+        </div>
+    </div>
 
- 
+    <div style="width:200px;left: 450px; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #338573; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">
+        <a asp-controller="Profile" asp-action="Indexx" asp-route-userId="@bid.UserID" style="text-decoration:none; text-align:center;margin-left:20px; color:#fff" >View Client Profile</a>
+    </div>
 
-  <button style="width:250px;left: 450px; top: 100px; border-radius:20px;position: absolute;background: #F4F5F7; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">View Client Profile</button>
-  <a asp-controller="" asp-action="" asp-route-BidID="@bid.BidID">
-  <button style="width:187px;left: 745px; top: 100px; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Accept Bid</button>
-  </a>
+    @if (int.Parse(bid.BidStatus) == 0)
+    {
+        <!-- Your code for the 'BidStatus' being 0 -->
+        <form asp-action="AcceptBid" method="post">
+            <input type="hidden" name="bidId" value="@bid.BidID" />
+            <input type="hidden" name="jobId" value="@bid.JobID" />
+            <button type="submit" id="acceptBidButton" style="width:150px; height:50px;left: 745px; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #338573; color: #fff; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 0px; word-wrap: break-word" class="btn btn-primary">Accept Bid</button>
+        </form>
+    }
+    else if (int.Parse(bid.BidStatus) == 1)
+    {
+        <!-- Your code for the 'BidStatus' being 1 -->
+        <div style="width:150px;left: 745px; text-align:center; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #853333; color: rgb(252, 251, 251); font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word" >Bid Accepted</div>
+    }
+    else
+    {
+        <!-- Your code for other conditions -->
+        <div style="width:500px;left: 745px; text-align:center; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #853333; color: rgb(252, 251, 251); font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word" >Bid Has been Awarded to Another User</div>
+    }
 
+    <div style="width: 658px;display: flex; flex-direction: column; margin-left:40px;margin-top:80px; height: 100px">
+        <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">BidAmount: @bid.BidAmount</span>
+        <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word; margin-left: 0px">Bid Date: @bid.BidDate</span>
+    </div>
 
-<div style="width: 658px; margin-left:40px;margin-top:80px; height: 100px">
-<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">BidAmount:</span>
-<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
-<span style="color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidAmount<br/></span>
-<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">Bid Date</span>
-<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
-<span style="color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidDate<br/></span>
+    <div style="margin-top:20px">
+        <div style="color: black; margin-left:40px; font-size: 24px; font-family: Poppins; font-weight: 700; line-height: 30px; word-wrap: break-word">Bid Message</div>
+        <div style="width: 1243px; height: 522px; left: 40px; top: 320px; position: absolute; color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidMessage</div>
+    </div>
 
-</div>
-<div style="margin-top:20px">
-<div style="color: black; margin-left:40px; font-size: 24px; font-family: Poppins; font-weight: 700; line-height: 30px; word-wrap: break-word">Bid Message<br/></div>
-<div style="width: 1243px; height: 522px; left: 40px; top: 320px; position: absolute; color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@bid.BidMessage</div>
-</div>
+    @if (TempData["BidMessage"] != null)
+    {
+        <p style="color: red;">@TempData["BidMessage"]</p>
+    }
 </div>

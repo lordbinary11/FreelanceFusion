@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\account.png",
+      "PackagePath": "staticwebassets\\images\\account.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\bgg.jpeg",
+      "PackagePath": "staticwebassets\\images\\bgg.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\man.jpg",
+      "PackagePath": "staticwebassets\\images\\man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\woman.jpg",
+      "PackagePath": "staticwebassets\\images\\woman.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

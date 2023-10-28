@@ -13,8 +13,10 @@
   </div>
 
   @if ((bool)ViewBag.ShowButtons)
-{
-  <button style="width:250px;left: 450px; top: 100px; border-radius:20px;position: absolute;background: #F4F5F7; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">View Freelancer Profile</button>
+{  
+  <a asp-controller="Profile" asp-action="Indexx" asp-route-UserID="@job.UserID">
+  <button style="width:250px;left: 450px; top: 100px; border-radius:20px;position: absolute;background: #F4F5F7; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">View Client Profile</button>
+  </a>
   <a asp-controller="MakeABid" asp-action="MakeABid" asp-route-JobID="@job.JobID">
   <button style="width:187px;left: 745px; top: 100px; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Make A Bid</button>
   </a>
@@ -41,7 +43,7 @@
 <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">Posted-By:</span>
 <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
 <span style="color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@job.FirstName @Model.LastName<br/></span>
-<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">Freelancer Email:</span>
+<span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">Client Email:</span>
 <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word"> </span>
 <span style="color: black; font-size: 20px; font-family: Poppins; font-weight: 300; line-height: 40px; word-wrap: break-word">@job.Email<br/></span>
 </div>

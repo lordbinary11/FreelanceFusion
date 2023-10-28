@@ -1,0 +1,41 @@
+@{
+    var usr = Model;
+}
+
+<div style="width: 100vw; display: flex; flex-direction: row;">
+    <div style="width: 300px; margin-left: 80px; margin-top: 100px; display: flex; flex-direction: column;">
+        <img style="width: 150px; height: 150px; border-radius: 9999px; border: 5px #A5A58D solid; margin-left: 60px" src="~/images/account.png" />
+        <div style="width: 600px; color: black; margin-left: 10px; font-size: 28px; font-family: Helvetica; font-weight: 700; word-wrap: break-word">@usr.FirstName @usr.LastName (@usr.Username)</div>
+        <div style="color: #6C6C6C; font-size: 24px; margin-left: 60px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.UserSkill</div>
+        <div style="width: 391px; margin-left: 60px; color: #6C6C6C; font-size: 18px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.Email</div>
+        <div style="width: 391px; margin-left: 0px; color: #6C6C6C; font-size: 18px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.Bio</div>
+    </div>
+
+    <div style="width: 2px; height: 100vh; left: 600px; top: 100px; position: absolute; background-color: #A5A58D;"></div>
+
+    <form method="post" asp-controller="Profile" asp-action="Save">
+        <div style="width: 600px; left: 300px; height: 605px; top: 20px; position: relative">
+            <div style="width: 90px; height: 40px; right: 100px; top: 10px; position: absolute; border-radius: 7px; border: 2px #A5A58D solid">
+                <a asp-controller="Profile" asp-action="Index" style="text-decoration: none; width: 57px; height: 19px; text-align: center; left: 13px; top: 8px; position: absolute; color: #338573; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">CANCEL</a>
+            </div>
+            <button type="submit" style="width: 90px; color: #fff; height: 40px; right: 0px; top: 10px; position: absolute; background: #338573; border-radius: 7px; border: 2px #A5A58D solid">SAVE</button>
+            <div style="width: 105px; height: 25px; left: 20px; top: 0px; position: absolute; color: black; font-size: 18px; font-family: Helvetica; font-weight: 700; word-wrap: break-word">BASIC INFO</div>
+            <div style="width: 85px; height: 19px; left: 20px; top: 101px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">FIRST NAME</div>
+            <input type="text" name="FirstName" id="FirstName" value="@usr.FirstName" style="width: 360px; height: 35px; left: 20px; top: 135px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" required/>
+            <div style="width: 79px; height: 19px; left: 400px; top: 101px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">LAST NAME</div>
+            <input type="text" name="LastName" id="LastName" value="@usr.LastName" style="width: 265px; height: 35px; left: 400px; top: 135px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" required/>
+            <div style="width: 80px; height: 19px; left: 20px; top: 195px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">USERNAME</div>
+            <input type="text" name="Username" id="Username" value="@usr.Username" style="width: 645px; height: 35px; left: 20px; top: 229px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" required/>
+            <div style="width: 47px; height: 19px; left: 20px; top: 289px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">EMAIL</div>
+            <input type="email" name="Email" id="Email" value="@usr.Email" style="width: 645px; height: 35px; left: 20px; top: 323px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" />
+            <div style="width: 120px; height: 19px; left: 20px; top: 383px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">USER SKILLS</div>
+            <input type="text" name="UserSkill" id="UserSkill" value="@usr.UserSkill" style="width: 645px; height: 35px; left: 20px; top: 417px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" />
+            <div style="width: 200px; height: 19px; left: 20px; top: 477px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">YEARS OF EXPERIENCE</div>
+            <input type="text" name="Experience" id="Experience" value="@usr.Experience" style="width: 645px; height: 35px; left: 20px; top: 511px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" />
+            <div style="width: 90px; height: 19px; left: 20px; top: 571px; position: absolute; color: black; font-size: 14px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">POTFOLIO</div>
+            <input type="text" name="Portfolio" id="Portfolio" value="@usr.Portfolio" style="width: 645px; height: 35px; left: 20px; top: 605px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid" />
+            <div style="width: 96px; height: 25px; left: 20px; top: 665px; position: absolute; color: black; font-size: 18px; font-family: Helvetica; font-weight: 700; word-wrap: break-word">ABOUT ME</div>
+            <textarea name="Bio" id="Bio" style="width: 645px; height: 100px; left: 20px; top: 700px; position: absolute; border-radius: 7px; border: 2px #E5E5E5 solid">@usr.Bio</textarea>
+        </div>
+    </form>
+</div>

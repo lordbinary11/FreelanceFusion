@@ -17,7 +17,7 @@
             <input type="email" id="Email" name="Email" placeholder="Email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
         </div>
          <div style="margin-bottom: 20px;">
-            <input type="password" id="Password" name="Password" placeholder="Password" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
+            <input type="password" id="Password" name="Password" minlength= "6" placeholder="Password" oninvalid="this.setCustomValidity('The minimum password length is 6.')" oninput="this.setCustomValidity('')" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>
         </div>
          <div style="margin-bottom: 20px;">
             <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" required>

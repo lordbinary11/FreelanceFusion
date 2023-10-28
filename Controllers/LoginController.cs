@@ -49,7 +49,8 @@ namespace FreelanceFusion.Controllers
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, credentials.Username),
-                 new Claim(ClaimTypes.NameIdentifier, UserID.ToString())
+                 new Claim(ClaimTypes.NameIdentifier, UserID.ToString()),
+                 new Claim("Password", credentials.Password)
                 
             };
 

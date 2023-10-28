@@ -1,0 +1,18 @@
+@{
+    var usr = Model;
+    
+}
+
+<div style =" height:100vh: display:flex; flex-direction:column">
+    <div style="width: 100vw; height: 200px; background: #338573; display: flex; justify-content: center; align-items: center;">
+        <a asp-controller="Profile" asp-action="EditProfile"  style="display: inline-block; width: 174.94px; right: 300px; top: 200px; background: rgb(244, 247, 246); border-radius: 10px; position: absolute; color: #338573; font-size: 23px; font-family: Poppins; font-weight: 400; line-height: 50px; word-wrap: break-word; text-align: center; text-decoration: none;">Edit Profile</a>
+        <a asp-controller="Profile" asp-action="ChangePassword" style="display: inline-block; width: 184.94px; right: 74px; top: 200px; background: rgb(244, 247, 246); border-radius: 10px; position: absolute; color: #338573; font-size: 23px; font-family: Poppins; font-weight: 400; line-height: 50px; word-wrap: break-word; text-align: center; text-decoration: none;">Change Password</a>
+        <img style="width: 200px; margin-top:250px; height: 200px; border-radius: 9999px; border: 5px #338573 solid;" src="~/images/account.png" />
+    </div>
+    <div style="color: black;margin-top:130px; margin-left:470px; font-size: 48px; font-family: Helvetica; font-weight: 700; word-wrap: break-word">@usr.FirstName @usr.LastName ( @usr.Username )</div>
+    <div style="color: #6C6C6C; margin-left:580px; font-size: 24px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.UserSkill</div>
+        <div style="width: 391px; margin-left:480px; text-align: center; color: #6C6C6C; font-size: 18px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.Experience</div>
+    <div style="width: 391px; margin-left:480px; text-align: center; color: #6C6C6C; font-size: 18px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.Email</div>
+        <div style="width: 391px; margin-left:480px; text-align: center; color: #6C6C6C; font-size: 18px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.Portfolio</div>
+    <div style="width: 391px; margin-left:470px; text-align: center; color: #6C6C6C; font-size: 18px; font-family: Helvetica; font-weight: 300; word-wrap: break-word">@usr.Bio</div>
+</div>

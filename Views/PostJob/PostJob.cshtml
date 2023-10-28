@@ -10,7 +10,7 @@
   </div>
   <div style="width: 500px; height: 50px; left: 74px; top: 200px; position: absolute; background: white">
     <label for="jobTitle" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Job Title</label>
-    <input type="text" id="Title" name="Title" style="width: 100%; height: 100%;border-radius: 10px; border: 1px #D6D6D6 solid padding: 10px;">
+    <input type="text" id="Title" name="Title" style="width: 100%; height: 100%;border-radius: 10px; border: 1px #D6D6D6 solid padding: 10px;" required>
   </div>
   <div style="width: 500px; height: 50px; right:74px; top: 200px; position: absolute; background: white; ">
     <label for="jobCategory" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Job Category</label>
@@ -22,21 +22,21 @@
    </select>
   </div>
   <div style="width: 500px; height: 50px; left: 74px; top: 300px; position: absolute; background: white; ">
-    <label for="jobBudget" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Job Budget(In dollars $)</label>
-    <input type="number" id="Budget" name="Budget" step="0.01" min="0" oninvalid="this.setCustomValidity('Please enter a valid monetary value.')" oninput="this.setCustomValidity('')" style="width: 100%; height: 100%; padding: 10px;border-radius: 10px; border: 1px #D6D6D6 solid">
+    <label for="jobBudget" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Job Budget(In Ghana Cedis GH₵)</label>
+    <input type="number" id="Budget" name="Budget" step="0.01" min="0" oninvalid="this.setCustomValidity('Please enter a valid monetary value.')" oninput="this.setCustomValidity('')" style="width: 100%; height: 100%; padding: 10px;border-radius: 10px; border: 1px #D6D6D6 solid" required>
   </div>
   <div style="width: 500px; height: 60px; right: 74px;display:flex; top: 300px; position: absolute; background: white;">
       <label for="skillsRequired" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Skill Required</label> 
-      <input type="text" id="JobSkill" name="JobSkill" style="width: 200%;flex:1 height: 100%; padding: 10px; border-radius: 10px; border: 1px #D6D6D6 solid">
+      <input type="text" id="JobSkill" name="JobSkill" oninvalid="this.setCustomValidity('Enter a skill required for this job.')" oninput="this.setCustomValidity('')" style="width: 200%;flex:1 height: 100%; padding: 10px; border-radius: 10px; border: 1px #D6D6D6 solid">
   </div>
   
   <div style="width: 500px; height: 60px; left: 74px; top: 400px; position: absolute; background: white; ">
     <label for="applicationDeadline" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Application Deadline</label>
-    <input type="date" id="Deadline" name="Deadline" style="width: 100%; height: 100%; padding: 10px;border-radius: 10px; border: 1px #D6D6D6 solid">
+    <input type="date" id="Deadline" name="Deadline" style="width: 100%; height: 100%; padding: 10px;border-radius: 10px; border: 1px #D6D6D6 solid" required>
   </div>
 
  <div style="width: 500px; height: 50px; right:74px; top: 400px; position: absolute; background: white; ">
-    <label for="Experience" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Experience</label>
+    <label for="Experience" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;" required>Experience</label>
     <select id="Experience" name="Experience"  style="width: 100%; height: 100%; padding: 10px;border-radius: 10px; border: 1px #D6D6D6 solid">
     <option value="1 Year Exp.">1 Year Exp.</option>
     <option value="2 Year Exp.">2 Year Exp.</option>
@@ -54,7 +54,7 @@
 
   <div style="width: 700px; height: 400px; left: 74px; top: 510px; position: absolute; background: white; ">
     <label for="jobDescription" style="position: absolute; top: -40px; left: 10px; color: #000; font-size: 20px; font-family: Inter; font-weight: 700;">Job Description</label>
-    <textarea type="text" id="Description" name="Description" style="width: 100%; height: 100%; padding: 10px;border-radius: 15px; border: 1px #D6D6D6 solid; resize: vertical"></textarea>
+    <textarea type="text" id="Description" name="Description" style="width: 100%; height: 100%; padding: 10px;border-radius: 15px; border: 1px #D6D6D6 solid; resize: vertical" required></textarea>
   </div>
 
   <button type="submit" style="background-color: #338573; color: white;height:38px;position:absolute;  top:700px;margin-right:400px;right:0; border-radius: 10%; cursor: pointer;width:126px;font-size: 24px; font-family: Inter; font-weight: 700; word-wrap: break-word">Submit</button>

@@ -15,16 +15,16 @@
     <p>@ViewBag.Message</p>
 }
   <div style="margin-top:20px">
-   @for (var i = 0; i < Model.Count; i++)
+   @foreach(var job in Model)
     {
-      var job = Model[i]; // Define job within the loop
-        <div class="job-item-@i" style=" margin-top:20px; width: 1306px; height: 135px; left: 0px; top: 12px; position: relative; background: white; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 10px; border: 1px #EFEFF0 solid">
+      
+        <div  style=" margin-top:20px; width: 1306px; height: 135px; left: 0px; top: 12px; position: relative; background: white; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 10px; border: 1px #EFEFF0 solid">
         <div style="width: 212px; left: 161px; top: 0px; position: absolute; color: #5F5858; font-size: 16px; font-family: Poppins; font-weight: 400; line-height: 80px; word-wrap: break-word">@job.FirstName @job.LastName</div>
-        <div style="width: 123px; left: 420px; top: 72px; position: absolute; color: black; font-size: 16px; font-family: Poppins; font-weight: 400; line-height: 80px; word-wrap: break-word">$ @job.Budget</div>
+        <div style="width: 123px; left: 420px; top: 72px; position: absolute; color: black; font-size: 16px; font-family: Poppins; font-weight: 400; line-height: 80px; word-wrap: break-word">GH₵ @job.Budget</div>
        <a asp-controller="JobDetails" asp-action="Index" asp-route-JobID="@job.JobID" style="display: inline-block; width: 174.94px; left: 1098px; top: 40px; background: #338573; border-radius: 10px; position: absolute; color: white; font-size: 23px; font-family: Poppins; font-weight: 400; line-height: 50px; word-wrap: break-word; text-align: center; text-decoration: none;">View Details</a>
 
 
-        <div style="width: 480px; height: 50px; left: 161px; top: 33px; position: absolute; color: black; font-size: 25px; font-family: Poppins; font-weight: 600; line-height: 80px; word-wrap: break-word">@job.Title (@job.Experience)</div>
+        <div style="width: 600px; height: 50px; left: 161px; top: 33px; position: absolute; color: black; font-size: 25px; font-family: Poppins; font-weight: 600; line-height: 80px; word-wrap: break-word">@job.Title (@job.Experience)</div>
         <div style="width: 18.71px; height: 20px; left: 160.91px; top: 95px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
             <div style="width: 14.03px; height: 18.33px; border: 2px #338573 solid"></div>
             <div style="width: 4.68px; height: 5px; border: 2px #338573 solid"></div>

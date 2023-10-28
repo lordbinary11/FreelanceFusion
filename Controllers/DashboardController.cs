@@ -26,7 +26,7 @@ namespace FreelanceFusion.Controllers
             }
         }
 
-        public IActionResult FreelancerView()
+        public IActionResult ClientView()
         {
             var jobs = GetJobsForCurrentUser();
             var bids = GetBidsForCurrentUser();
@@ -35,7 +35,7 @@ namespace FreelanceFusion.Controllers
             return View((jobs, bids));
         }
 
-        public IActionResult ClientView()
+        public IActionResult FreelancerView()
         {
             var bids = GetBidsMadeByCurrentUser();
             ViewBag.ShowButtons = false;
@@ -98,7 +98,8 @@ namespace FreelanceFusion.Controllers
                                 BidDate = reader["BidDate"].ToString(),
                                 JobTitle = reader["Title"].ToString(),
                                 FirstName = reader["FirstName"].ToString(),
-                                LastName = reader["LastName"].ToString()
+                                LastName = reader["LastName"].ToString(),
+                                JobID = reader["JobID"].ToString(),
                             };
                             bids.Add(bid);
                         }
@@ -132,7 +133,8 @@ namespace FreelanceFusion.Controllers
                                 BidDate = reader["BidDate"].ToString(),
                                 JobTitle = reader["Title"].ToString(),
                                 FirstName = reader["FirstName"].ToString(),
-                                LastName = reader["LastName"].ToString()
+                                LastName = reader["LastName"].ToString(),
+                                JobID = reader["JobID"].ToString(),
                             };
                             bids.Add(bid);
                         }

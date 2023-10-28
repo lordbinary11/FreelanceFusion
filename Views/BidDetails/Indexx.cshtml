@@ -13,13 +13,19 @@
   </div>
   </div>
 
-  @if(!showButtons)
-{
-  <button style="width:250px;left: 450px; top: 100px; border-radius:20px;position: absolute;background: #F4F5F7; color: black; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">View Client Profile</button>
-  <a asp-controller="" asp-action="" asp-route-BidID="@bid.BidID">
-  <button style="width:187px;left: 745px; top: 100px; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Accept Bid</button>
-  </a>
-}
+  @if(int.Parse(bid.BidStatus) == 1)
+    {
+        <!-- Your code for the 'BidStatus' being 1 -->
+        <div style="width:100vw;left: 0px; text-align:center; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #338573; color: rgb(252, 251, 251); font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word" >Congratulations you have been awarded the Job!</div>
+    }
+    else if((int.Parse(bid.BidStatus) == 2))
+    {
+        <!-- Your code for other conditions -->
+        <div style="width:100vw;left: 0px; text-align:center; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #ee0808; color: #000; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word" >Sorry Bid Has been Awarded to Another User!</div>
+    }
+    else{
+      <div style="width:100vw;left: 0px; text-align:center; align-items:center;top: 100px; border-radius:10px;position: absolute;background: #fbff01; color: #000; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word" >Bid Submitted, pending Client Review</div>
+    }
 
 <div style="width: 658px; margin-left:40px;margin-top:80px; height: 100px">
 <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 40px; word-wrap: break-word">BidAmount:</span>
