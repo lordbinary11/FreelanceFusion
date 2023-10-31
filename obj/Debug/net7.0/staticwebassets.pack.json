@@ -21,8 +21,16 @@
       "PackagePath": "staticwebassets\\images\\bgg.jpeg"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\check.png",
+      "PackagePath": "staticwebassets\\images\\check.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\man.jpg",
       "PackagePath": "staticwebassets\\images\\man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\video.mp4",
+      "PackagePath": "staticwebassets\\images\\video.mp4"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\woman.jpg",

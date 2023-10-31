@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kE7zIT0Zw9vGbs7CcvNuitJCUlpFlfnB16ttxruQGiI=",
+  "Hash": "FwSJHOzZSL18/kLqaN6vvFOp2xx5k+tTOTSSNiWMzeY=",
   "Source": "FreelanceFusion",
   "BasePath": "_content/FreelanceFusion",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\images\\bgg.jpeg"
     },
     {
+      "Identity": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\check.png",
+      "SourceId": "FreelanceFusion",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\",
+      "BasePath": "_content/FreelanceFusion",
+      "RelativePath": "images/check.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\check.png"
+    },
+    {
       "Identity": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\man.jpg",
       "SourceId": "FreelanceFusion",
       "SourceType": "Discovered",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\man.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\video.mp4",
+      "SourceId": "FreelanceFusion",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\",
+      "BasePath": "_content/FreelanceFusion",
+      "RelativePath": "images/video.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\video.mp4"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\woman.jpg",
