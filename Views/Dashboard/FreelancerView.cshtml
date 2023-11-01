@@ -48,38 +48,75 @@
         }
     </style>
 </head>
-<body>
+<body style="background:#F8FAFC" >
     <a asp-controller="Dashboard" asp-action="ClientView" >
         <h1 style="width:187px;left: 60px; margin-top: 20px; text-align:center; border-radius:20px; position: absolute; background: #338573; color: white; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 50px; word-wrap: break-word">Freelancer View</h1>
     </a>
 
-    <h2 style=" text-align: center;font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">My Submitted Bids</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Client Name</th>
-                <th>Job Title</th>
-                <th>Bid Date</th>
-                <th>Bid Amount</th>
-                <th>Status</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var bid in Model)
-            {
-                <tr>
-                    <td>@(bid.FirstName) @(bid.LastName)</td>
-                    <td>@bid.JobTitle</td>
-                    <td>@bid.BidDate</td>
-                    <td>$ @bid.BidAmount</td>
-                    <td>@bid.BidStatus</td>
-                    <td>
-                        <a asp-controller="BidDetails" asp-action="Indexx"  asp-route-BidID="@bid.BidID">View</a>
-                    </td>
-                </tr>
+<h2 style="text-align: center; margin-top: 80px; font-size: 30px; font-family: Poppins; font-weight: 500; line-height: 80px; word-wrap: break-word">My Submitted Bids</h2>
+<div style="width: 1200px; background:#fff; border-radius:16px; height: auto;margin-left:80px; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: 16px; display: inline-flex">
+    <div style="width: 1078px; margin-top:50px; margin-left:50px; background: #F8FAFC; border-radius: 12px; justify-content: space-between; align-items: flex-start; display: inline-flex">
+        <div style="width: 200px; height: 64px; padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="flex: 1 1 0; color: #94A3B8; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">Client Name</div>
+        </div>
+        <div style="width: 160px; height: 64px; padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="flex: 1 1 0; color: #94A3B8; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">Job Title</div>
+        </div>
+        <div style="width: 160px; height: 64px;  padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="flex: 1 1 0; color: #94A3B8; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">Bid Date</div>
+        </div>
+        <div style="width: 160px; height: 64px; padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="flex: 1 1 0; color: #94A3B8; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">Bid Amount</div>
+        </div>
+        <div style="width: 120px; height: 64px; padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="flex: 1 1 0; color: #94A3B8; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">Status</div>
+        </div>
+        <div style="width: 100px; height: 64px; padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="flex: 1 1 0; color: #94A3B8; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">Action</div>
+        </div>
+    </div>
+    @foreach (var bid in Model)
+    {
+        <div style="width: 1078px; margin-left:50px; background: #F8FAFC; border-radius: 12px;  align-items: flex-start; display: inline-flex">
+            <div style="width: 200px; height: 64px; padding: 8px; justify-content: center; align-items: center; gap: 16px; display: flex">
+                <div style="flex: 1 1 0; color: #0F172A; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">@($"{bid.FirstName} {bid.LastName}")</div>
+            </div>
+            <div style="width: 200px; height: 64px; padding: 8px; margin-left:20px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                <div style="flex: 1 1 0; color: #0F172A; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">@bid.JobTitle</div>
+            </div>
+            <div style="width: 200px; height: 64px; padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                <div style="flex: 1 1 0; color: #0F172A; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">@bid.BidDate</div>
+            </div>
+            <div style="width: 160px; height: 64px;  padding: 8px; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                <div style="flex: 1 1 0; color: #0F172A; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">GH₵ @bid.BidAmount</div>
+            </div>
+            @if (int.Parse(bid.BidStatus) == 0){
+            <div style="width: 56px; height: 32px; margin-top:15px; margin-left:40px; padding-right: 24px; background: #2563; border-radius: 1000px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+                <div style="width: 32px; height: 32px; position: relative; background: white; border-radius: 1000px; border: 4px #fff solid"></div>
+            </div> 
             }
-        </tbody>
-    </table>
+            else if (int.Parse(bid.BidStatus) == 1){
+              <div style="width: 56px; height: 32px; margin-top:15px; margin-left:40px; padding-left: 24px; background: #338573; border-radius: 1000px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+                <div style="width: 32px; height: 32px; position: relative; background: white; border-radius: 1000px; border: 4px #338573 solid"></div>
+            </div>    
+            }
+            else {
+                <div style="width: 56px; height: 32px; margin-top:15px; margin-left:40px; padding-left: 24px; background: red; border-radius: 1000px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+                <div style="width: 32px; height: 32px; position: relative; background: white; border-radius: 1000px; border: 4px red solid"></div>
+            </div>
+            }
+            <div style="width: 100px;  height: 64px; padding: 8px; margin-left:100px;  align-items: center; gap: 16px; display: flex">
+                <div style="flex: 1 1 0; color: #0F172A; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; letter-spacing: 0.20px; word-wrap: break-word">
+                    <a asp-controller="BidDetails" asp-action="Indexx" asp-route-BidID="@bid.BidID" style="text-decoration: none; color: #2563EB">View</a>
+                </div>
+            </div>
+        </div>
+        <div style="width: 1078px; height: 0px; border: 1px #fff solid"></div>
+    }
+</div>
+
 </body>
 </html>
+
+
+ 

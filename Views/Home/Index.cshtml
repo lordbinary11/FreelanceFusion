@@ -96,99 +96,126 @@
 
        <div style="width: 100vw; height: 600px; display:flex; flex-direction:column;left: 0px; top: 910px; position: relative;">
            <h2 style=" margin-left:10px;font-family:Poppins; font-weight:600; margin-left:80px;margin-top:100px">We have all you want!</h2>
-           <div style="width:100vw; height:200px; left:110px;top:50px; display:flex; flex-direction:row; position:relative; " >
+           <div style="width:1200px; height:200px; left:110px;top:50px; display:flex; flex-direction:row; position:relative; " >
                <div style="display:flex; flex-direction:column" >
+                 <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 3 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/graphic-design.png" />
-                  <span style ="font-size:20px; margin-left:-40px">Graphic & Design</span>
+                  </a>
+                  <span style ="font-size:20px; margin-top: 10px;margin-left:-40px">Graphic & Design</span>
                </div>
-               <div style="display:flex; flex-direction:column">
-                  <img style="width:70px;margin-right:200px; height:70px" src = "~/images/advertisements.png" />
-                  <span style ="font-size:20px; margin-left:-45px">Digital Marketing</span>
-               </div>
+               <div style="display: flex; flex-direction: column; align-items: center;">
+                   <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 2 })" class="category" style="text-decoration: none; color: inherit;">
+                     <img style="width:70px;margin-right:200px; height:70px" src="~/images/advertisements.png" />  </a>       
+                    <span style="font-size: 20px; margin-top: 10px; margin-left:-200px; text-decoration: none; color: inherit;">Digital Marketing</span> 
+               </div> 
+
+
                <div style="display:flex; flex-direction:column" >
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 8 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/creative-writing.png" />
-                  <span style ="font-size:20px; margin-left:-60px">Writing & Translation</span>
+                </a>
+                  <span style ="font-size:20px; margin-top:10px; margin-left:-60px">Writing & Translation</span>
                </div>
                <div style="display:flex; flex-direction:column" >
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 9 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/3d.png" />
-                  <span style ="font-size:20px; margin-left:-60px">Video & Animation</span>
+                </a>
+                  <span style ="font-size:20px; margin-top:10px; margin-left:-60px">Video & Animation</span>
                 </div>  
                <div style="display:flex; flex-direction:column" >
-                  <img style="width:70px;margin-right:200px; height:70px" src = "~/images/headphones.png" />
-                  <span style ="font-size:20px; margin-left:-30px">Music & Audio</span>
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 10 })" class="category" style="text-decoration: none; color: inherit;">
+                  <img style="width:70px;margin-right:0px; height:70px" src = "~/images/headphones.png" />
+                </a>
+                  <span style ="font-size:20px; margin-top:10px;margin-left:-30px">Music & Audio</span>
                 </div>  
            </div>
 
-           <div style="width:100vw; height:200px; left:110px;top:50px; display:flex; flex-direction:row; position:relative; background:#fff" >
+           <div style="width:600px; height:200px; left:110px;top:50px; display:flex; flex-direction:row; position:relative; background:#fff" >
                <div style="display:flex; flex-direction:column" >
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 1 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/code.png" />
-                  <span style ="font-size:20px; margin-left:-60px">Programming & Tech</span>
+                </a>
+                  <span style ="font-size:20px;margin-top:10px; margin-left:-60px">Programming & Tech</span>
                </div>
                <div style="display:flex; flex-direction:column">
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 11 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/cooperation.png" />
-                  <span style ="font-size:20px; margin-left:-5px">Business</span>
+                <a/>
+                  <span style ="font-size:20px;margin-top:10px; margin-left:-5px">Business</span>
                </div>
                <div style="display:flex; flex-direction:column" >
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 12 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/needs.png" />
-                  <span style ="font-size:20px; margin-left:-5px">Lifestyle</span>
+                </a>
+                  <span style ="font-size:20px;margin-top:10px; margin-left:-5px">Lifestyle</span>
                </div>
                <div style="display:flex; flex-direction:column" >
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 13 })" class="category" style="text-decoration: none; color: inherit;">
                   <img style="width:70px;margin-right:200px; height:70px" src = "~/images/database.png" />
-                  <span style ="font-size:20px; margin-left:10px">Data</span>
+                </a>
+                  <span style ="font-size:20px;margin-top:10px; margin-left:10px">Data</span>
                 </div>  
                <div style="display:flex; flex-direction:column" >
-                  <img style="width:70px;margin-right:200px; height:70px" src = "~/images/photography.png" />
-                  <span style ="font-size:20px; margin-left:-20px">Photography</span>
+                <a href="@Url.Action("CategoryFilter", "Home", new { categoryId = 14 })" class="category" style="text-decoration: none; color: inherit;">
+                  <img style="width:70px;margin-right:0px; height:70px" src = "~/images/photography.png" />
+                </a>
+                  <span style ="font-size:20px;margin-top:10px; margin-left:-20px">Photography</span>
                 </div>  
            </div>
        </div>
 
 
-       <div style="width: 100vw; height: 600px; display:flex; flex-direction:row; left: 0px; top: 910px; position: relative; background:#0d084d">
-  <div class="slideshow-container">
-    <div class="mySlides" style="display: block;">
-      <div style="display:flex; flex-direction:row;align-items:center;">
-        <img style="width:30px;height:30px; margin-left:10px" src="~/images/prev.png" onclick="plusSlides(-1)" style="cursor: pointer;" />
-        <img style="width:635px; height:435px; border-radius:20px;margin-left:20px;margin-right:20px;margin-top:100px; margin-bottom:100px;" src="https://i.postimg.cc/FKvVmxM1/wepik.png" />
-        <div style="display:flex;flex-direction:column; ">
-          <i style="font-size: 25px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">"Absolutely impressed with this freelance app! The platform's intuitive design and seamless navigation make it incredibly easy to post jobs and connect with talented freelancers. The bidding system ensures competitive pricing, and the communication tools allow for smooth collaboration throughout the project. I especially appreciate the secure payment system, which guarantees fair transactions and builds trust between clients and freelancers."</i>
-          <span style="font-size: 30px;margin-top:20px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">Miss Theresa</span>
+       <div style="width: 100vw; height: 800px; display:flex; flex-direction:row; left: 0px; top: 910px; position: relative; background:#0d084d">
+          <div class="slideshow-container">
+            <div class="mySlides" style="display: block; width:100vw">
+             <div style="display:flex; flex-direction:row;align-items:center;">
+             <img style="width:30px;height:30px; margin-left:10px" src="~/images/prev.png" onclick="plusSlides(-1)" style="cursor: pointer;" />
+             <img style="width:635px; height:435px; border-radius:20px;margin-left:20px;margin-right:20px;margin-top:100px; margin-bottom:100px;" src="https://i.postimg.cc/FKvVmxM1/wepik.png" />
+             <div style="display:flex;flex-direction:column; ">
+               <i style="font-size: 25px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">"Absolutely impressed with this freelance app! The platform's intuitive design and seamless navigation make it incredibly easy to post jobs and connect with talented freelancers. The bidding system ensures competitive pricing, and the communication tools allow for smooth collaboration throughout the project. I especially appreciate the secure payment system, which guarantees fair transactions and builds trust between clients and freelancers."</i>
+               <span style="font-size: 30px;margin-top:20px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">Miss Theresa</span>
+             </div>
+             <img style="width:30px;height:30px;  " src="~/images/next.png" onclick="plusSlides(1)" style="cursor: pointer;" />
+           </div>
+           </div> 
+
+          <div class="mySlides" style="display: none;">
+          <div style="display:flex; flex-direction:row;align-items:center;">
+          <img style="width:30px;height:30px; margin-left:10px" src="~/images/prev.png" onclick="plusSlides(-1)" style="cursor: pointer;" />
+          <img style="width:635px; height:435px; border-radius:20px;margin-left:20px;margin-right:20px;margin-top:100px; margin-bottom:100px;" src="https://i.postimg.cc/NjHNNfXt/Tessy.jpg" />
+          <div style="display:flex;flex-direction:column; ">
+            <i style="font-size: 25px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">"An absolute game-changer! This platform has streamlined the way I connect with skilled freelancers. Its user-friendly interface makes posting jobs a breeze, and the diverse range of talent available is truly impressive. The transparent pricing system and secure payment process provide peace of mind, fostering a sense of trust and reliability. I've had nothing but positive experiences with the platform and highly recommend it to anyone seeking top-notch freelancing services."</i>
+            <span style="font-size: 30px;margin-top:20px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">Miss Adu Theresa Amoah - Software Developer</span>
+          </div>
+          <img style="width:30px;height:30px; margin-right:10px " src="~/images/next.png" onclick="plusSlides(1)" style="cursor: pointer;" />
+         </div>
+         </div>
+
+         <div class="mySlides" style="display: none;">
+         <div style="display:flex; flex-direction:row;align-items:center;">
+           <img style="width:30px;height:30px; margin-left:10px" src="~/images/prev.png" onclick="plusSlides(-1)" style="cursor: pointer;" />
+           <img style="width:635px; height:435px; border-radius:20px;margin-left:20px;margin-right:20px;margin-top:100px; margin-bottom:100px;" src="https://i.postimg.cc/jSnM2dq9/dennis.jpg" />
+           <div style="display:flex;flex-direction:column; ">
+            <i style="font-size: 25px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">"As a graphic designer, I've found this freelance app to be an invaluable tool for expanding my client base and showcasing my creativity. The platform's seamless job posting and bidding process have connected me with exciting projects that align perfectly with my skill set. I particularly appreciate the emphasis on secure transactions and clear communication, which has fostered strong client relationships."</i>
+            <span style="font-size: 30px;margin-top:20px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">Mr Asante Obeng Dennis - Graphic Designer </span>
+           </div>
+          <img style="width:30px;height:30px; margin-right:10px " src="~/images/next.png" onclick="plusSlides(1)" style="cursor: pointer;" />
+         </div>
+         </div> 
+
+
         </div>
-        <img style="width:30px;height:30px; margin-right:10px " src="~/images/next.png" onclick="plusSlides(1)" style="cursor: pointer;" />
-      </div>
+
+         <div style="width: 100vw; margin-top:100px; height: 83px; bottom: 0; position: absolute;">
+            <div style="width: 100vw; height: 60px; left: 0px; bottom: 0; position: absolute; background: #338573"></div>
+           <div style="width: 459.51px; height: 83px; left: 492.01px; top: 15px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 80px; word-wrap: break-word">© 2023 Freelance Fusion. Designed By Group 1</div>
+         </div>
+
     </div>
 
-    <div class="mySlides" style="display: none;">
-      <div style="display:flex; flex-direction:row;align-items:center;">
-        <img style="width:30px;height:30px; margin-left:10px" src="~/images/prev.png" onclick="plusSlides(-1)" style="cursor: pointer;" />
-        <img style="width:635px; height:435px; border-radius:20px;margin-left:20px;margin-right:20px;margin-top:100px; margin-bottom:100px;" src="https://i.postimg.cc/NjHNNfXt/Tessy.jpg" />
-        <div style="display:flex;flex-direction:column; ">
-          <i style="font-size: 25px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">"An absolute game-changer! This platform has streamlined the way I connect with skilled freelancers. Its user-friendly interface makes posting jobs a breeze, and the diverse range of talent available is truly impressive. The transparent pricing system and secure payment process provide peace of mind, fostering a sense of trust and reliability. I've had nothing but positive experiences with the platform and highly recommend it to anyone seeking top-notch freelancing services."</i>
-          <span style="font-size: 30px;margin-top:20px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">Miss Adu Theresa Amoah - Software Developer</span>
-        </div>
-        <img style="width:30px;height:30px; margin-right:10px " src="~/images/next.png" onclick="plusSlides(1)" style="cursor: pointer;" />
-      </div>
-    </div>
-
-    <div class="mySlides" style="display: none;">
-      <div style="display:flex; flex-direction:row;align-items:center;">
-        <img style="width:30px;height:30px; margin-left:10px" src="~/images/prev.png" onclick="plusSlides(-1)" style="cursor: pointer;" />
-        <img style="width:635px; height:435px; border-radius:20px;margin-left:20px;margin-right:20px;margin-top:100px; margin-bottom:100px;" src="https://i.postimg.cc/FKvVmxM1/wepik.png" />
-        <div style="display:flex;flex-direction:column; ">
-          <i style="font-size: 25px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">"Absolutely impressed with this freelance app! The platform's intuitive design and seamless navigation make it incredibly easy to post jobs and connect with talented freelancers. The bidding system ensures competitive pricing, and the communication tools allow for smooth collaboration throughout the project. I especially appreciate the secure payment system, which guarantees fair transactions and builds trust between clients and freelancers."</i>
-          <span style="font-size: 30px;margin-top:20px; color:#fff; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word;">Mr </span>
-        </div>
-        <img style="width:30px;height:30px; margin-right:10px " src="~/images/next.png" onclick="plusSlides(1)" style="cursor: pointer;" />
-      </div>
-    </div>
 
 
-  </div>
 </div>
-
-
-
-    </div>
 
     
 
@@ -203,7 +230,7 @@
     }, {
         text1: { color: "black", text: "Find Something " },
         text2: { color: "black", text: "Exciting" },
-        text3: { color: "white", text: "That" },
+        text3: { color: "white", text: "That " },
         text4: { color: "white", text: "Inspires" },
         text5: { color: "black", text: "You" }
     },

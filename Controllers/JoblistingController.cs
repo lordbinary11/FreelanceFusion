@@ -32,7 +32,7 @@ namespace FreelanceFusion.Controllers
             List<Job> jobs = new List<Job>();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "select j.jobID, j.title, j.budget, j.experience, u.FirstName, u.LastName from job j join [user] u on j.UserID=u.UserID";
+                string sql = "select j.jobID, j.title, j.budget, j.experience, j.Description, u.FirstName, u.LastName from job j join [user] u on j.UserID=u.UserID";
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     connection.Open();
@@ -47,7 +47,8 @@ namespace FreelanceFusion.Controllers
                                 Budget = reader["budget"].ToString(),
                                 Experience = reader["Experience"].ToString(),
                                 FirstName = reader["FirstName"].ToString(),
-                                LastName = reader["LastName"].ToString()
+                                LastName = reader["LastName"].ToString(),
+                                Description = reader["Description"].ToString(),
                             };
                             jobs.Add(job);
                         }

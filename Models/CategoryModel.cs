@@ -8,6 +8,12 @@ namespace FreelanceFusion.Models
         
     }
 
+    
+    public class UserSession
+    {
+        public static string Username { get; set; }
+    }
+
     public class Job
 {
     public int JobID { get; set; }
@@ -17,6 +23,7 @@ namespace FreelanceFusion.Models
     public string Deadline { get; set; }
     public string Description { get; set; }
     public int CategoryID { get; set; }
+    public string CategoryName { get; set; }
     public string JobSkill {get;set;}
     public string Experience {get; set; }
     public string FirstName {get; set ;}

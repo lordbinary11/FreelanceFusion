@@ -46,6 +46,7 @@ namespace FreelanceFusion.Controllers
 
                 if (UserID > 0)
             {
+                
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, credentials.Username),

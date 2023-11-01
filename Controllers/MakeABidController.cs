@@ -74,7 +74,7 @@ private int GetBidCountForJob(int userId, int JobID)
             var Status = "0";
             int bidCount = GetBidCountForJob(userId, JobID);
 
-              if (bidCount > 2)
+              if (bidCount > 1)
     {
         // Prompt the user and deny the making of the bid
         // You can return an error message or redirect the user to an error page

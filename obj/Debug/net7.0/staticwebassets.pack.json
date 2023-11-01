@@ -13,28 +13,132 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\1.jpeg",
+      "PackagePath": "staticwebassets\\images\\1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\2.jpeg",
+      "PackagePath": "staticwebassets\\images\\2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\3.jpeg",
+      "PackagePath": "staticwebassets\\images\\3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\3d.png",
+      "PackagePath": "staticwebassets\\images\\3d.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\5.jpeg",
+      "PackagePath": "staticwebassets\\images\\5.jpeg"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\account.png",
       "PackagePath": "staticwebassets\\images\\account.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\advertisements.png",
+      "PackagePath": "staticwebassets\\images\\advertisements.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\arrow-left.png",
+      "PackagePath": "staticwebassets\\images\\arrow-left.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\arrow-right.png",
+      "PackagePath": "staticwebassets\\images\\arrow-right.png"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\bgg.jpeg",
       "PackagePath": "staticwebassets\\images\\bgg.jpeg"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\c3.jpg",
+      "PackagePath": "staticwebassets\\images\\c3.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\check.png",
       "PackagePath": "staticwebassets\\images\\check.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\code.png",
+      "PackagePath": "staticwebassets\\images\\code.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\cooperation.png",
+      "PackagePath": "staticwebassets\\images\\cooperation.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\creative-writing.png",
+      "PackagePath": "staticwebassets\\images\\creative-writing.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\database.png",
+      "PackagePath": "staticwebassets\\images\\database.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\ghana(1).png",
+      "PackagePath": "staticwebassets\\images\\ghana(1).png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\ghana.png",
+      "PackagePath": "staticwebassets\\images\\ghana.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\graphic-design.png",
+      "PackagePath": "staticwebassets\\images\\graphic-design.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\headphones.png",
+      "PackagePath": "staticwebassets\\images\\headphones.png"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\man.jpg",
       "PackagePath": "staticwebassets\\images\\man.jpg"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\needs.png",
+      "PackagePath": "staticwebassets\\images\\needs.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\next.png",
+      "PackagePath": "staticwebassets\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\photography.png",
+      "PackagePath": "staticwebassets\\images\\photography.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\prev.png",
+      "PackagePath": "staticwebassets\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\rating(1).png",
+      "PackagePath": "staticwebassets\\images\\rating(1).png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\rating.png",
+      "PackagePath": "staticwebassets\\images\\rating.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\video.mp4",
       "PackagePath": "staticwebassets\\images\\video.mp4"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\wepik.png",
+      "PackagePath": "staticwebassets\\images\\wepik.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\woman.jpg",
       "PackagePath": "staticwebassets\\images\\woman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\images\\woman1.jpg",
+      "PackagePath": "staticwebassets\\images\\woman1.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\FreelanceFusion\\wwwroot\\js\\site.js",

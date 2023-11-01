@@ -26,8 +26,8 @@ public class BidDetailsController : Controller
                 throw new Exception("Current user ID not found or invalid.");
             }
        }
-   
-    
+
+
     private readonly string connectionString = "Server=(localdb)\\MylocalDB;Database=FreelanceFusion;Trusted_Connection=True;MultipleActiveResultSets=True";
     public IActionResult Index(int BidID)
     {
@@ -56,10 +56,7 @@ public class BidDetailsController : Controller
             return NotFound();
         }
 
-        //  int jobID = int.Parse(JobID);
-          
-        //   bool isBidAwarded = IsBidAwarded(jobID, BidID);
-        //   ViewBag.IsBidAwarded = isBidAwarded;        
+       
 
       
         return View(bid);
